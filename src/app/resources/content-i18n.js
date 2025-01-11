@@ -1,61 +1,58 @@
 import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
+    // 1) Información de la persona
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Geidy A.',
+        lastName:  'Hernández',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
-        role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
-    }
+        // Roles principales (puedes editar o resumir)
+        role: "Architect, English Teacher, Project Manager, Human Resources",
+        avatar: '/images/geidy-avatar.jpg', // Ajusta la ruta según tus assets
+        location: 'America/Santo_Domingo',  // Zona horaria de República Dominicana
+        languages: ['Spanish', 'English']   // Idiomas que domina
+    };
 
+    // 2) Newsletter
     const newsletter = {
         display: true,
-        title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
-        description: <>{t("newsletter.description")}</>
-    }
+        title: <>Subscribe to Geidy's Newsletter</>,
+        description: <>I occasionally write about architecture, education, and share insights on teaching and design.</>
+    };
 
+    // 3) Redes sociales
     const social = [
-        // Links are automatically displayed.
-        // Import new icons in /once-ui/icons.ts
-        {
-            name: 'GitHub',
-            icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
-        },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/in/geidy-hern%C3%A1ndez-110028325/', // Ajusta con tu perfil real
         },
-        {
-            name: 'X',
-            icon: 'x',
-            link: '',
-        },
+        
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:geidy100@hotmail.com', // Ajusta a tu correo real
         },
-    ]
+    ];
 
+    // 4) Sección de inicio (Home)
     const home = {
-        label: t("home.label"),
-        title: t("home.title", {name: person.name}),
-        description: t("home.description", {role: person.role}),
-        headline: <>{t("home.headline")}</>,
-        subline: <>{t("home.subline")}</>
-    }
+        label: 'Home',
+        title: `Geidy's Portfolio`,
+        description: `Portfolio website showcasing my work as an Architect, English Teacher, Project Manager, and HR specialist.`,
+        headline: <>Architect, Educator, and Facilitator</>,
+        subline: <>
+            I'm Geidy A. Hernández, from El Seibo, Dominican Republic. Passionate about merging architecture, teaching, and project management.
+        </>
+    };
 
+    // 5) Sección "About" (Acerca de mí)
     const about = {
-        label: t("about.label"),
-        title: t("about.title"),
-        description: t("about.description", {name: person.name, role: person.role, location: person.location}),
+        label: 'About',
+        title: 'About Me',
+        description: `Meet ${person.name}, an Architect and English Teacher from El Seibo, Dominican Republic, with extensive experience also in Project Management and Human Resources.`,
         tableOfContent: {
             display: true,
             subItems: true
@@ -65,186 +62,173 @@ const createI18nContent = (t) => {
         },
         calendar: {
             display: true,
-            link: 'https://cal.com'
+            link: 'https://cal.com' // Si deseas compartir tu calendario para citas
         },
         intro: {
             display: true,
-            title: t("about.intro.title"),
-            description: <>{t("about.intro.description")}</>
+            title: 'Introduction',
+            description: <>
+                I have been teaching English since 2010 and working in architectural projects since 2003.  
+                Throughout my career, I have combined my passion for education, construction project management,
+                and people development, making me versatile for roles in Human Resources and Project Management.
+            </>
         },
+
+        // EXPERIENCIA PROFESIONAL
         work: {
-            display: true, // set to false to hide this section
-            title: t("about.work.title"),
+            display: true,
+            title: 'Work Experience',
             experiences: [
+                // --- EXPERIENCIA EN ENSEÑANZA (Teaching) ---
                 {
-                    company: 'FLY',
-                    timeframe: t("about.work.experiences.FLY.timeframe"),
-                    role: t("about.work.experiences.FLY.role"),
-                    achievements: t("about.work.experiences.FLY.achievements").split(";"),
-                    images: [ // optional: leave the array empty if you don't want to display images
-                        {
-                            src: '/images/projects/project-01/cover-01.jpg',
-                            alt: 'Once UI Project',
-                            width: 16,
-                            height: 9
-                        }
-                    ]
+                    company: 'Teaching Experience',
+                    timeframe: '2010 - Present',
+                    role: 'English Teacher / Facilitator',
+                    achievements: [
+                        "Taught English in multiple institutions: Visión Mundial (El Seibo), Escuela Regional de Turismo (Higüey), Colegio Jardín Verde (Bávaro), Colegio Morada de Sabiduría (Higüey), Despacho de la Primera Dama (El Seibo), and Programa de Inglés por Inmersión (El Seibo).",
+                        "Served as English Facilitator in INFOTEP.",
+                        "Recognized for innovative teaching strategies and positive student outcomes."
+                    ],
+                    images: []
                 },
+                // --- EXPERIENCIA EN ARQUITECTURA Y PROYECTOS ---
                 {
-                    company: 'Creativ3',
-                    timeframe: t("about.work.experiences.Creativ3.timeframe"),
-                    role: t("about.work.experiences.Creativ3.role"),
-                    achievements: t("about.work.experiences.Creativ3.achievements").split(";"),
-                    images: [ ]
-                }
+                    company: 'Architecture & Project Management',
+                    timeframe: '2003 - Present',
+                    role: 'Architect / Project Manager / Contractor',
+                    achievements: [
+                        "Guest Service at Iberoestar Hotel, Bávaro.",
+                        "Construction Supervisor at Ayuntamiento Municipal, El Seibo (Internship).",
+                        "Resident Architect in Liceo La Higuera (El Seibo), Escuela Básica KM 8 (El Seibo), and Escuela Básica KM 6 (Miches).",
+                        "Architect in charge of Redes de Distribución, Monte Plata.",
+                        "Contractor for Ministerio de Obras Públicas, La Romana.",
+                        "Oversaw construction, design, and efficient project execution in both public and private sectors."
+                    ],
+                    images: []
+                },
             ]
         },
+
+        // ESTUDIOS
         studies: {
-            display: true, // set to false to hide this section
+            display: true,
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    name: 'Universidad Autónoma de Santo Domingo (UASD)',
+                    description: <>Degree in Architecture</>
                 },
                 {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    name: 'Universidad Internacional de La Rioja (UNIR)',
+                    description: <>Teaching English as a Foreign Language and Soft Skills Development</>
                 }
             ]
         },
+
+        // CURSOS Y SEMINARIOS (Podemos crear una nueva sección "courses")
+        courses: {
+            display: true,
+            title: 'Courses & Seminars',
+            items: [
+                { name: "Informatics", institution: "UASD, Santo Domingo", year: "2003" },
+                { name: "Human Relations", institution: "Infotec, El Seibo", year: "2010" },
+                { name: "Labor Self-sufficiency Workshop", institution: "Iglesia SUD, El Seibo", year: "2011" },
+                { name: "English Phonetics Workshop", institution: "Colegio la Alt, Higüey", year: "2009" },
+                { name: "Property Valuation (Tasación)", institution: "CODIA, La Romana", year: "2010" },
+                { name: "Public Speaking (Oratoria)", institution: "Iglesia SUD, El Seibo", year: "2011" },
+                { name: "Residential Electricity", institution: "FEDETEC, El Seibo", year: "2011" },
+                { name: "Administration & Finance", institution: "Rodolfo De La Cruz", year: "2013" },
+                { name: "Teaching Certification (Habilitación Docente)", institution: "UTESA, Santo Domingo", year: "2017" },
+                { name: "Basic Revit", institution: "INFOTEP, CODIA", year: "2019" },
+                { name: "ICT Management (Manejo de las TICs)", institution: "Mescyt", year: "2020" },
+                { name: "Project Management & Leadership (Dirección y Gestión de Proyectos)", institution: "EDUTEC, Santiago", year: "2023" },
+                { name: "Result-Oriented Negotiation", institution: "EDUTEC, Santiago", year: "2023" },
+                { name: "Evaluation, Selection & Supplier Relations", institution: "EDUTEC, Santiago", year: "2023" },
+                { name: "Procurement Management & Supplier Negotiations", institution: "EDUTEC, Santiago", year: "2023" },
+                { name: "Microsoft Project", institution: "EDUTEC, Santiago", year: "2023" },
+                { name: "Virtual Tutor Training", institution: "INFOTEP, El Seibo", year: "2023" },
+                { name: "English Planning & Learning as a Second Language", institution: "Universidad UNIR", year: "2024" },
+                { name: "Soft Skills & Managerial Abilities", institution: "Universidad UNIR", year: "2024" },
+                { name: "Office Suite (Informatics)", institution: "INFOTEP", year: "2024" },
+                { name: "Human Education & Development", institution: "INFOTEP", year: "2024" },
+                { name: "Facilitator of Participant-Centered Learning", institution: "INFOTEP", year: "2023" },
+            ]
+        },
+
+        // HABILIDADES TÉCNICAS
         technical: {
-            display: true, // set to false to hide this section
-            title: t("about.technical.title"),
+            display: true,
+            title: 'Technical Skills',
             skills: [
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-02.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                        {
-                            src: '/images/projects/project-01/cover-03.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'Revit',
+                    description: <>Proficient in Revit for architectural modeling and design.</>,
+                    images: []
                 },
                 {
-                    title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-04.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'Microsoft Project',
+                    description: <>Skilled in project management using Microsoft Project.</>,
+                    images: []
                 }
             ]
         }
-    }
+    };
 
+    // 6) Sección de Blog
     const blog = {
-        label: t("blog.label"),
-        title: t("blog.title"),
-        description: t("blog.description", {name: person.name})
-        // Create new blog posts by adding a new .mdx file to app/blog/posts
-        // All posts will be listed on the /blog route
-    }
+        label: 'Blog',
+        title: "Geidy's Blog",
+        description: `Stay updated with ${person.name}'s latest articles on architecture, education, and more.`
+    };
 
+    // 7) Sección de Proyectos (Work)
     const work = {
-        label: t("work.label"),
-        title: t("work.title"),
-        description: t("work.description", {name: person.name})
-        // Create new project pages by adding a new .mdx file to app/blog/posts
-        // All projects will be listed on the /home and /work routes
-    }
+        label: 'Work',
+        title: 'My Projects',
+        description: `Explore ${person.name}'s architecture, education, and management projects.`
+    };
 
+    // 8) Sección de Galería
     const gallery = {
-        label: t("gallery.label"),
-        title: t("gallery.title"),
-        description: t("gallery.description", {name: person.name}),
-        // Images from https://pexels.com
+        label: 'Gallery',
+        title: 'My Project Gallery',
+        description: `A collection of architectural, educational, and managerial work by ${person.name}.`,
         images: [
             {
                 src: '/images/gallery/img-01.jpg',
-                alt: 'image',
+                alt: 'Project image',
                 orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-02.jpg',
-                alt: 'image',
+                alt: 'Project image',
                 orientation: 'horizontal'
             },
-            { 
+
+            {
                 src: '/images/gallery/img-03.jpg',
-                alt: 'image',
-                orientation: 'vertical'
+                alt: 'Project image',
+                orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-04.jpg',
-                alt: 'image',
+                alt: 'Project image',
                 orientation: 'horizontal'
             },
             {
                 src: '/images/gallery/img-05.jpg',
-                alt: 'image',
+                alt: 'Project image',
                 orientation: 'horizontal'
             },
             {
                 src: '/images/gallery/img-06.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-07.jpg',
-                alt: 'image',
+                alt: 'Project image',
                 orientation: 'horizontal'
             },
-            {
-                src: '/images/gallery/img-08.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-09.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-10.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            { 
-                src: '/images/gallery/img-11.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-12.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-13.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            { 
-                src: '/images/gallery/img-14.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
+            // Agrega más según tu preferencia
         ]
-    }
+    };
+
     return {
         person,
         social,
@@ -254,7 +238,7 @@ const createI18nContent = (t) => {
         blog,
         work,
         gallery
-    }
+    };
 };
 
 export { createI18nContent };

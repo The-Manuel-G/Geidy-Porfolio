@@ -1,0 +1,275 @@
+{
+    "person": {
+      "roles": [
+        "Arquitecta",
+        "Profesora de Inglés",
+        "Gerente de Proyectos",
+        "Recursos Humanos"
+      ]
+    },
+    "newsletter": {
+      "title": "Suscríbete al Boletín de Geidy",
+      "description": "Ocasionalmente escribo sobre arquitectura, educación y comparto ideas sobre la enseñanza y el diseño.",
+      "button": "Suscríbete"
+    },
+    "home": {
+      "label": "Inicio",
+      "title": "Portafolio de Geidy",
+      "description": "Sitio web de portafolio que muestra mi trabajo como Arquitecta, Profesora de Inglés, Gerente de Proyectos y Recursos Humanos",
+      "headline": "Arquitecta, Educadora, Gerente de Proyectos, RR.HH.",
+      "subline": "Soy Geidy A. Hernández, una profesional con experiencia en arquitectura, enseñanza, gestión de proyectos y recursos humanos."
+    },
+    "about": {
+      "label": "Acerca de",
+      "title": "Acerca de Mí",
+      "description": "Conoce a Geidy A. Hernández García de la  República Dominicana — Arquitecta, Profesora de Inglés, Gerente de Proyectos y Especialista en Recursos Humanos",
+      "intro": {
+        "title": "Introducción",
+        "description": "Geidy es una profesional radicada en República Dominicana, con pasión por la arquitectura, la enseñanza y la coordinación de proyectos. Su experiencia abarca la gestión de proyectos de construcción, la educación, recursos humanos y la facilitación de conocimientos en todos estos ámbitos."
+      },
+      "work": {
+        "title": "Experiencia Profesional",
+        "experiences": {
+          "Teaching": {
+            "timeframe": "2010 - Presente",
+            "role": "Profesora de Inglés y Facilitadora",
+            "achievements": "Impartió clases de inglés en múltiples instituciones (INFOTEP, Programa de Inglés por Inmersión, Colegio Morada de Sabiduría, entre otros) y desarrolló estrategias de enseñanza innovadoras para ayudar al éxito estudiantil.",
+            "positions": [
+              {
+                "institution": "Visión Mundial, El Seibo",
+                "role": "Profesora de Inglés"
+              },
+              {
+                "institution": "Escuela Regional de Turismo, Higüey",
+                "role": "Profesora de Inglés"
+              },
+              {
+                "institution": "Colegio Jardín Verde, Bávaro",
+                "role": "Profesora de Inglés"
+              },
+              {
+                "institution": "Colegio Morada de Sabiduría, Higüey",
+                "role": "Profesora de Inglés"
+              },
+              {
+                "institution": "Despacho de la Primera Dama, El Seibo",
+                "role": "Profesora de Inglés"
+              },
+              {
+                "institution": "Programa de Inglés por Inmersión, El Seibo",
+                "role": "Profesora de Inglés"
+              },
+              {
+                "institution": "INFOTEP",
+                "role": "Facilitadora de Inglés"
+              }
+            ]
+          },
+          "Architecture": {
+            "timeframe": "2003 - Presente",
+            "role": "Arquitecta y Gerente de Proyectos",
+            "achievements": "Supervisó construcción, diseño y ejecución de proyectos de manera eficiente en diversos proyectos públicos y privados.",
+            "positions": [
+              {
+                "institution": "Iberoestar Hotel, Bávaro",
+                "role": "Servicio al Huésped (Guest Service)"
+              },
+              {
+                "institution": "Ayuntamiento Municipal, El Seibo (Pasantía)",
+                "role": "Supervisora de Obra"
+              },
+              {
+                "institution": "Liceo La Higuera, El Seibo",
+                "role": "Arquitecta Residente"
+              },
+              {
+                "institution": "Escuela Básica KM 8, El Seibo",
+                "role": "Arquitecta Residente"
+              },
+              {
+                "institution": "Escuela Básica KM 6, Miches",
+                "role": "Arquitecta Residente"
+              },
+              {
+                "institution": "Redes de Distribución, Monte Plata",
+                "role": "Arquitecta Encargada"
+              },
+              {
+                "institution": "Ministerio de Obras Públicas, La Romana",
+                "role": "Contratista"
+              }
+            ]
+          }
+        },
+        "otherPotentialRoles": {
+          "title": "Roles Adicionales Potenciales",
+          "roles": [
+            {
+              "roleName": "Recursos Humanos",
+              "description": "Con habilidades interpersonales sólidas, técnicas de negociación y experiencia en el área educativa, Geidy está preparada para gestionar reclutamiento, capacitación y relaciones laborales."
+            },
+            {
+              "roleName": "Gerente de Proyectos",
+              "description": "Con amplia experiencia en proyectos arquitectónicos y liderazgo de equipos, Geidy puede manejar efectivamente la planificación, coordinación y ejecución de proyectos en diversos sectores."
+            }
+          ]
+        }
+      },
+      "studies": {
+        "title": "Estudios",
+        "institutions": {
+          "Universidad Autónoma de Santo Domingo (UASD)": {
+            "description": "Licenciatura en Arquitectura"
+          },
+          "Universidad Internacional de La Rioja (UNIR)": {
+            "description": "Enseñanza de Inglés como Lengua Extranjera y Desarrollo de Habilidades Blandas"
+          }
+        }
+      },
+      "courses": {
+        "title": "Cursos y Seminarios",
+        "list": [
+          {
+            "name": "Informática",
+            "institution": "UASD, Santo Domingo",
+            "year": "2003"
+          },
+          {
+            "name": "Relaciones Humanas",
+            "institution": "Infotec, El Seibo",
+            "year": "2010"
+          },
+          {
+            "name": "Taller de Autosuficiencia Laboral",
+            "institution": "Iglesia SUD, El Seibo",
+            "year": "2011"
+          },
+          {
+            "name": "Taller de Fonética Inglés",
+            "institution": "Colegio la Alt, Higüey",
+            "year": "2009"
+          },
+          {
+            "name": "Tasación",
+            "institution": "CODIA, La Romana",
+            "year": "2010"
+          },
+          {
+            "name": "Oratoria",
+            "institution": "Iglesia SUD, El Seibo",
+            "year": "2011"
+          },
+          {
+            "name": "Electricidad Residencial",
+            "institution": "FEDETEC, El Seibo",
+            "year": "2011"
+          },
+          {
+            "name": "Administración y Finanzas",
+            "institution": "Rodolfo De La Cruz",
+            "year": "2013"
+          },
+          {
+            "name": "Habilitación Docente",
+            "institution": "UTESA, Santo Domingo",
+            "year": "2017"
+          },
+          {
+            "name": "Revit Básico",
+            "institution": "INFOTEP, CODIA",
+            "year": "2019"
+          },
+          {
+            "name": "Manejo de las TICs",
+            "institution": "Mescyt",
+            "year": "2020"
+          },
+          {
+            "name": "Dirección y Gestión de Proyectos",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Negociación Direccionada a Resultados",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Evaluación, Selección y Relación con Proveedores",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Gerencia de Compras y Negociación con Proveedores",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Microsoft Project",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Formación de Tutores en Ambiente Virtual",
+            "institution": "INFOTEP, El Seibo",
+            "year": "2023"
+          },
+          {
+            "name": "Planeación y Aprendizaje del Inglés como Segunda Lengua",
+            "institution": "Universidad UNIR",
+            "year": "2024"
+          },
+          {
+            "name": "Soft Skills y Habilidades Directivas",
+            "institution": "Universidad UNIR",
+            "year": "2024"
+          },
+          {
+            "name": "Paquete de Oficinas (Informática)",
+            "institution": "INFOTEP",
+            "year": "2024"
+          },
+          {
+            "name": "Formación Humana",
+            "institution": "INFOTEP",
+            "year": "2024"
+          },
+          {
+            "name": "Facilitador de Proceso de Enseñanza y Aprendizaje Centrado en el Participante",
+            "institution": "INFOTEP",
+            "year": "2023"
+          }
+        ]
+      },
+      "technical": {
+        "title": "Habilidades Técnicas",
+        "skills": {
+          "Revit": {
+            "description": "Dominio de Revit para modelado y diseño arquitectónico."
+          },
+          "Microsoft Project": {
+            "description": "Experiencia en gestión de proyectos con Microsoft Project."
+          }
+        }
+      }
+    },
+    "blog": {
+      "label": "Blog",
+      "title": "Escribiendo sobre Arquitectura, Educación y Más...",
+      "description": "Lee sobre los proyectos más recientes de Geidy."
+    },
+    "work": {
+      "label": "Proyectos",
+      "title": "Mis Proyectos",
+      "description": "Proyectos de arquitectura, educación y gestión de Geidy"
+    },
+    "gallery": {
+      "label": "Galería",
+      "title": "Mi Galería de Proyectos",
+      "description": "Una colección de trabajos arquitectónicos, educativos y de gestión realizados por Geidy"
+    },
+    "projectCard": {
+      "label": "Ver Detalles"
+    }
+  }
+  

@@ -1,81 +1,275 @@
 {
     "person": {
-        "role": "Design Engineer"
+      "roles": [
+        "Architect",
+        "English Teacher",
+        "Project Manager",
+        "Human Resources"
+      ]
     },
     "newsletter": {
-        "title": "Subscribe to {firstName}'s Newsletter",
-        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
-        "button": "Sign up"
+      "title": "Subscribe to Geidy's Newsletter",
+      "description": "I occasionally write about architecture, education, and share insights on teaching and design.",
+      "button": "Sign up"
     },
     "home": {
-        "label": "Home",
-        "title": "{name}'s Portfolio",
-        "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
-        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+      "label": "Home",
+      "title": "Geidy's Portfolio",
+      "description": "Portfolio website showcasing my work as an Architect, English Teacher, Project Manager, and Human Resources professional",
+      "headline": "Architect, Educator, Project Manager, HR",
+      "subline": "I'm Geidy A. Hernández, a professional with experience in architecture, teaching, project management, and human resources."
     },
     "about": {
-        "label": "About",
-        "title": "About me",
-        "description": "Meet {name}, {role} from {location}",
-        "intro": {
-            "title": "Introduction",
-            "description": "Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology."
+      "label": "About",
+      "title": "About Me",
+      "description": "Meet Geidy A. Hernández García from Dominican Republic — Architect, English Teacher, Project Manager, and HR Specialist",
+      "intro": {
+        "title": "Introduction",
+        "description": "Geidy is a Dominican-based professional with a passion for architecture, teaching, and project coordination. Her expertise spans construction project management, education, human resources, and facilitating knowledge in all these fields."
+      },
+      "work": {
+        "title": "Work Experience",
+        "experiences": {
+          "Teaching": {
+            "timeframe": "2010 - Present",
+            "role": "English Teacher and Facilitator",
+            "achievements": "Delivered English lessons in multiple institutions (INFOTEP, Programa de Inglés por Inmersión, Colegio Morada de Sabiduría, among others) and developed innovative teaching strategies to help students succeed.",
+            "positions": [
+              {
+                "institution": "Visión Mundial, El Seibo",
+                "role": "English Teacher"
+              },
+              {
+                "institution": "Escuela Regional de Turismo, Higüey",
+                "role": "English Teacher"
+              },
+              {
+                "institution": "Colegio Jardín Verde, Bávaro",
+                "role": "English Teacher"
+              },
+              {
+                "institution": "Colegio Morada de Sabiduría, Higüey",
+                "role": "English Teacher"
+              },
+              {
+                "institution": "Despacho de la Primera Dama, El Seibo",
+                "role": "English Teacher"
+              },
+              {
+                "institution": "Programa de Inglés por Inmersión, El Seibo",
+                "role": "English Teacher"
+              },
+              {
+                "institution": "INFOTEP",
+                "role": "English Facilitator"
+              }
+            ]
+          },
+          "Architecture": {
+            "timeframe": "2003 - Present",
+            "role": "Architect and Project Manager",
+            "achievements": "Oversaw construction, design, and project execution efficiently in various public and private projects.",
+            "positions": [
+              {
+                "institution": "Iberoestar Hotel, Bávaro",
+                "role": "Guest Service"
+              },
+              {
+                "institution": "Ayuntamiento Municipal, El Seibo (Internship)",
+                "role": "Construction Supervisor"
+              },
+              {
+                "institution": "Liceo La Higuera, El Seibo",
+                "role": "Resident Architect"
+              },
+              {
+                "institution": "Escuela Básica KM 8, El Seibo",
+                "role": "Resident Architect"
+              },
+              {
+                "institution": "Escuela Básica KM 6, Miches",
+                "role": "Resident Architect"
+              },
+              {
+                "institution": "Redes de Distribución, Monte Plata",
+                "role": "Architect in Charge"
+              },
+              {
+                "institution": "Ministerio de Obras Públicas, La Romana",
+                "role": "Contractor"
+              }
+            ]
+          }
         },
-        "work": {
-            "title": "Work Experience",
-            "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Present",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
-                },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Lead Designer",
-                    "achievements": "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.;Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue."
-                }
+        "otherPotentialRoles": {
+          "title": "Additional Potential Roles",
+          "roles": [
+            {
+              "roleName": "Human Resources",
+              "description": "With strong interpersonal skills, negotiation techniques, and a background in education, Geidy is well-prepared to manage recruiting, training, and employee-relations processes."
+            },
+            {
+              "roleName": "Project Manager",
+              "description": "Having extensive experience in architectural projects and team leadership, Geidy can effectively handle planning, coordination, and execution of projects in various sectors."
             }
-        },
-        "studies": {
-            "title": "Studies",
-            "institutions": {
-                "University of Jakarta": {
-                    "description": "Studied software engineering."
-                },
-                "Build the Future": {
-                    "description": "Studied online marketing and personal branding."
-                }
-            }
-        },
-        "technical": {
-            "title": "Technical skills",
-            "skills": {
-                "Figma": {
-                    "description": "Able to prototype in Figma with Once UI with unnatural speed."
-                },
-                "Nextjs": {
-                    "description": "Building next gen apps with Next.js + Once UI + Supabase."
-                }
-            }
+          ]
         }
+      },
+      "studies": {
+        "title": "Studies",
+        "institutions": {
+          "Universidad Autónoma de Santo Domingo (UASD)": {
+            "description": "Degree in Architecture"
+          },
+          "Universidad Internacional de La Rioja (UNIR)": {
+            "description": "Teaching English as a Foreign Language and Soft Skills Development"
+          }
+        }
+      },
+      "courses": {
+        "title": "Courses and Seminars",
+        "list": [
+          {
+            "name": "Informatics",
+            "institution": "UASD, Santo Domingo",
+            "year": "2003"
+          },
+          {
+            "name": "Human Relations",
+            "institution": "Infotec, El Seibo",
+            "year": "2010"
+          },
+          {
+            "name": "Labor Self-sufficiency Workshop",
+            "institution": "Iglesia SUD, El Seibo",
+            "year": "2011"
+          },
+          {
+            "name": "English Phonetics Workshop",
+            "institution": "Colegio la Alt, Higüey",
+            "year": "2009"
+          },
+          {
+            "name": "Property Valuation",
+            "institution": "CODIA, La Romana",
+            "year": "2010"
+          },
+          {
+            "name": "Public Speaking",
+            "institution": "Iglesia SUD, El Seibo",
+            "year": "2011"
+          },
+          {
+            "name": "Residential Electricity",
+            "institution": "FEDETEC, El Seibo",
+            "year": "2011"
+          },
+          {
+            "name": "Administration and Finance",
+            "institution": "Rodolfo De La Cruz",
+            "year": "2013"
+          },
+          {
+            "name": "Teaching Certification",
+            "institution": "UTESA, Santo Domingo",
+            "year": "2017"
+          },
+          {
+            "name": "Basic Revit",
+            "institution": "INFOTEP, CODIA",
+            "year": "2019"
+          },
+          {
+            "name": "ICT Management",
+            "institution": "Mescyt",
+            "year": "2020"
+          },
+          {
+            "name": "Project Management and Leadership",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Result-Oriented Negotiation",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Evaluation, Selection, and Supplier Relations",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Procurement Management and Supplier Negotiations",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Microsoft Project",
+            "institution": "EDUTEC, Santiago",
+            "year": "2023"
+          },
+          {
+            "name": "Virtual Tutor Training",
+            "institution": "INFOTEP, El Seibo",
+            "year": "2023"
+          },
+          {
+            "name": "English Planning and Learning as a Second Language",
+            "institution": "Universidad UNIR",
+            "year": "2024"
+          },
+          {
+            "name": "Soft Skills and Managerial Abilities",
+            "institution": "Universidad UNIR",
+            "year": "2024"
+          },
+          {
+            "name": "Office Suite (Informatics)",
+            "institution": "INFOTEP",
+            "year": "2024"
+          },
+          {
+            "name": "Human Education and Development",
+            "institution": "INFOTEP",
+            "year": "2024"
+          },
+          {
+            "name": "Facilitator of Participant-Centered Teaching and Learning Processes",
+            "institution": "INFOTEP",
+            "year": "2023"
+          }
+        ]
+      },
+      "technical": {
+        "title": "Technical Skills",
+        "skills": {
+          "Revit": {
+            "description": "Proficient in Revit for architectural modeling and design."
+          },
+          "Microsoft Project": {
+            "description": "Skilled in project management using Microsoft Project."
+          }
+        }
+      }
     },
     "blog": {
-        "label": "Blog",
-        "title": "Writing about design and tech...",
-        "description": "Read what {name} has been up to recently"
+      "label": "Blog",
+      "title": "Writing about Architecture, Education, and More...",
+      "description": "Read about Geidy's latest endeavors."
     },
     "work": {
-        "label": "Work",
-        "title": "My projects",
-        "description": "Design and dev projects by {name}"
+      "label": "Work",
+      "title": "My Projects",
+      "description": "Architecture, education, and management projects by Geidy"
     },
     "gallery": {
-        "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by {name}"
+      "label": "Gallery",
+      "title": "My Project Gallery",
+      "description": "A collection of architectural, educational, and managerial work by Geidy"
     },
     "projectCard": {
-        "label": "Read Case Study"
+      "label": "View Details"
     }
-}
+  }
+  
