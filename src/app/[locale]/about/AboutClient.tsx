@@ -28,6 +28,13 @@ interface AboutClientProps {
   locale: string;
 }
 
+interface SocialItem {
+  name: string;
+  icon: string;
+  link?: string;
+  onClick?: () => void;
+}
+
 export default function AboutClient({ locale }: AboutClientProps) {
   const t = useTranslations();
   const { person, about, social } = renderContent(t);
@@ -35,7 +42,7 @@ export default function AboutClient({ locale }: AboutClientProps) {
 
   const [openResumesModal, setOpenResumesModal] = React.useState(false);
 
-  const enhancedSocial = [
+  const enhancedSocial: SocialItem[] = [
     ...social,
     {
       name: "Resume",
